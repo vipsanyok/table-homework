@@ -3,8 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Форми</title>
+     <style>
+   HTML { color: blue; }  
+   BODY { color: red; }
+     </style>
+    
 </head>
 <body>
-    
+    <form>
+    <header>
+    <h1>Соціологічне опитування на тему:"Паління"</h1><br><br>
+    </header>
+    <article>
+        <header>
+            <section>  
+        <h2>Чи палили Ви коли небуть в житті?</h2>
+         <label for="відповідь">відповідь</label>
+         <input type="text" name="відповідь" id="відповідь">
+              </section>
+           
+            <section>
+            <h2>З якого віку Ви почали палити?</h2>
+            <input type="checkbox" name="space" value="1" /> 
+            до 18 років.<br />
+            <input type="checkbox" name="space" value="2" /> 
+            У 18 років. <br />
+            <input type="checkbox" name="space" value="3" /> 
+            Пізніше ніж у 18 років. <br />
+               </section>
+               
+            <section>
+        <h2>Скільки цигарок в день Ви палите?</h2>
+        <input type="radio" name="s" value="m" /> 10 <br />
+        <input type="radio" name="s" value="f" /> 15 <br />
+        <input type="radio" name="s" value="В" /> 20 
+               </section>
+               
+                <section>
+        <h2>Як ви кидали паління?</h2>
+        <label for="коментар">Коментар: </label>
+        <textarea name="коментар" id="коментар"></textarea>
+               </section>
+        </header><br>
+        
+               
+            <section>
+        <h2>Що стало стимулом для паління?</h2>
+        <select name="city' multiple='multiple">
+        <option value="Друзі підказали">Друзі підказали</option>
+        <option value="Хотів(ла) стати крутим(тою)">Хотів(ла) стати крутим(тою)</option>
+        <option value="Захотів(ла) спробувати не можу спинитись">Захотів(ла) спробувати не можу спинитись</option>
+               </section>
+        </header><br>
+       
+        <footer>
+            <h2>Введіть Ваші данні</h2>
+      <form action="https://formspree.io/vipsanyok@mail.ru" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"
+            placeholder="input your name here" required>
+        <br>
+       <label>Email: <input type="email" name="email" required></label>
+        <br>
+        </article>
+        <input type="submit">
+        </footer>
+    </form>
+    </form>
 </body>
 </html>
